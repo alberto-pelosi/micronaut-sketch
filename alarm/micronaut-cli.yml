@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: alarm
+---
+testFramework: junit
+sourceLanguage: java
