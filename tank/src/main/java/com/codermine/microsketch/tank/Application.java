@@ -1,4 +1,4 @@
-package alarm;
+package com.codermine.microsketch.tank;
 
 import io.micronaut.runtime.Micronaut;
 
