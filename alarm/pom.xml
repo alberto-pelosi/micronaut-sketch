@@ -22,15 +22,7 @@
   </repositories>
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>io.micronaut.data</groupId>
-        <artifactId>micronaut-data-processor</artifactId>
-        <version>1.0.0.M5</version>
-      </dependency>
-      <dependency>
-        <groupId>io.micronaut.configuration</groupId>
-        <artifactId>micronaut-rabbitmq</artifactId>
-      </dependency>
+
       <dependency>
         <groupId>io.micronaut</groupId>
         <artifactId>micronaut-bom</artifactId>
@@ -41,6 +33,36 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
+    <dependency>
+      <groupId>io.micronaut.data</groupId>
+      <artifactId>micronaut-data-jdbc</artifactId>
+      <version>1.0.0.M5</version>
+    </dependency>
+
+
+
+    <dependency>
+      <groupId>io.micronaut.configuration</groupId>
+      <artifactId>micronaut-rabbitmq</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.swagger</groupId>
+      <artifactId>swagger-core</artifactId>
+      <version>1.5.23</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>swagger-ui</artifactId>
+      <version>3.23.8</version>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut.configuration</groupId>
+      <artifactId>micronaut-openapi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-annotations</artifactId>
+    </dependency>
     <dependency>
       <groupId>io.micronaut</groupId>
       <artifactId>micronaut-inject</artifactId>
@@ -163,6 +185,15 @@
               <arg>-parameters</arg>
             </compilerArgs>
             <annotationProcessorPaths>
+              <path>
+                <groupId>io.micronaut.data</groupId>
+                <artifactId>micronaut-data-processor</artifactId>
+                <version>1.0.0.M5</version>
+              </path>
+              <path>
+                <groupId>io.micronaut.configuration</groupId>
+                <artifactId>micronaut-openapi</artifactId>
+              </path>
                   <path>
                     <groupId>io.micronaut</groupId>
                     <artifactId>micronaut-inject-java</artifactId>
