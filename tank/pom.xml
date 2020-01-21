@@ -189,6 +189,7 @@
               <path>
                 <groupId>io.micronaut.configuration</groupId>
                 <artifactId>micronaut-openapi</artifactId>
+                <version>1.2.2</version>
               </path>
                   <path>
                     <groupId>io.micronaut</groupId>
