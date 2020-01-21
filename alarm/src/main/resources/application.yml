@@ -1,3 +1,17 @@
 micronaut:
   application:
     name: alarm
+  router:
+    static-resources:
+      swagger:
+        path: classpath:META-INF/swagger
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        enabled: true
+        paths: classpath:META-INF/resources/webjars/swagger-ui/3.23.8
+        mapping: /swagger-ui/**
+      static-web:
+        enabled: true
+        paths: classpath:/static
+        mapping: /static/**
