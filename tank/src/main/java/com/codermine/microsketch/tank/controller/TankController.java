@@ -22,7 +22,7 @@ public class TankController {
 
 
 
-    @Post(MediaType.APPLICATION_JSON)
+    @Post(produces = MediaType.APPLICATION_JSON)
     @Operation(summary = "Insert new tank", description = "Insert new tank" )
     @Tag(name = "Tank")
     public Tank create(@Body Tank tank) {
