@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  timescale:
+    image: postgres:latest
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sketch
+      PGDATA: /var/lib/postgresql/data/pgdata
+  rabbit:
+    image: "rabbitmq:3-management"
+    hostname: "rabbit1"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+
+
+
+
+
+

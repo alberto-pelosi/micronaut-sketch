@@ -15,3 +15,10 @@ micronaut:
         enabled: true
         paths: classpath:/static
         mapping: /static/**
+datasources:
+  default:
+    url: jdbc:postgresql://192.168.99.100:5432/sketch
+    driverClassName: org.postgresql.Driver
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+    dialect: POSTGRES
