@@ -36,20 +36,12 @@ public class TankController {
         return tankService.read(id);
     }
 
-    @Get(MediaType.APPLICATION_JSON)
+    @Get(produces = MediaType.APPLICATION_JSON)
     @Operation(summary = "List all Tanks", description = "List all Tanks" )
     @Tag(name = "Tank")
     public List<Tank> findAll() {
         return tankService.findAll();
     }
-
-    @Get(MediaType.APPLICATION_JSON)
-    @Operation(summary = "Find Tank By Name", description = "Find Tank By Name" )
-    @Tag(name = "Tank")
-    public List<Tank> findByName(String name) {
-        return tankService.findByName(name);
-    }
-
 
 
 }
