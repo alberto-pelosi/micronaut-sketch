@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  timescale:
+  postgres:
     image: postgres:latest
     ports:
     - "5432:5432"
