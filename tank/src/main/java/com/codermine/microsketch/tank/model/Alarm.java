@@ -4,17 +4,18 @@ import io.micronaut.data.annotation.GeneratedValue;
 import io.micronaut.data.annotation.Id;
 import io.micronaut.data.annotation.MappedEntity;
 
-import javax.validation.constraints.NotNull;
+import java.time.LocalDateTime;
 
 @MappedEntity
-public class Tank {
+public class Alarm {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    @NotNull
-    private String name;
+    private Long tankId;
+
+    private LocalDateTime time;
 
     private Long currentLevel;
 
@@ -28,12 +29,20 @@ public class Tank {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public Long getTankId() {
+        return tankId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTankId(Long tankId) {
+        this.tankId = tankId;
+    }
+
+    public LocalDateTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalDateTime time) {
+        this.time = time;
     }
 
     public Long getCurrentLevel() {
@@ -54,9 +63,10 @@ public class Tank {
 
     @Override
     public String toString() {
-        return "Tank{" +
+        return "Alarm{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", tankId=" + tankId +
+                ", time=" + time +
                 ", currentLevel=" + currentLevel +
                 ", capacity=" + capacity +
                 '}';

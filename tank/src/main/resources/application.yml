@@ -22,3 +22,9 @@ datasources:
     username: ${DB_USER:postgres}
     password: ${DB_PASSWORD:postgres}
     dialect: POSTGRES
+rabbitmq:
+  uri: amqp://${RABBIT_HOST:192.168.99.100}:5672
+  username: ${RABBIT_USER:guest}
+  password: ${RABBIT_PASSWORD:guest}
+smartsense:
+  timefromserver: true

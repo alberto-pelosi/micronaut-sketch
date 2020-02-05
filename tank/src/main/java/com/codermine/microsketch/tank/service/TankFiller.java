@@ -31,7 +31,7 @@ public class TankFiller {
     }
 
 
-    @Scheduled(fixedDelay = "10s")
+    @Scheduled(fixedDelay = "30s")
     public void fill() {
         logger.info("Periodical tank filling");
         List<Tank> tanks = tankRepository.findAll();
