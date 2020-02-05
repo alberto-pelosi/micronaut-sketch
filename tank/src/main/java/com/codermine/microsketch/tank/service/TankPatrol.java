@@ -1,6 +1,7 @@
 package com.codermine.microsketch.tank.service;
 
 import com.codermine.microsketch.tank.dao.TankRepository;
+import com.codermine.microsketch.tank.handler.Dispenser;
 import com.codermine.microsketch.tank.model.Tank;
 import io.micronaut.scheduling.annotation.Scheduled;
 
@@ -14,11 +15,16 @@ public class TankPatrol {
     @Inject
     private TankRepository tankRepository;
 
-    @Scheduled(fixedDelay = "90s")
+
+    //
+
+
+    //first example
+   /* @Scheduled(fixedDelay = "90s")
     public void checkLevel() {
         List<Tank> tanks = tankRepository.findAll();
         for(Tank tank : tanks) {
 
         }
-    }
+    }*/
 }
