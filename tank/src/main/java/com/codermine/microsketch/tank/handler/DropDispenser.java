@@ -8,8 +8,10 @@ import javax.inject.Singleton;
 @Primary
 public class DropDispenser implements Dispenser {
 
+    public static final long quantity = 1L;
+
     @Override
     public Long dispense() {
-        return 1L;
+        return quantity;
     }
 }

@@ -28,3 +28,5 @@ rabbitmq:
   password: ${RABBIT_PASSWORD:guest}
 smartsense:
   timefromserver: true
+tank:
+  dispenser-flow: 10
