@@ -11,9 +11,9 @@ import io.swagger.v3.oas.annotations.info.Info;
 
                 description = "That's one small step for [a] man")
 )
-public class Application {
+public class TankApplication {
 
     public static void main(String[] args) {
-        Micronaut.run(Application.class);
+        Micronaut.run(TankApplication.class);
     }
 }
